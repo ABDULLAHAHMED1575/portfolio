@@ -48,22 +48,22 @@ export const Contact = () => {
 
       {/* Social Media Links */}
       <div className="flex justify-center gap-6 mb-8">
-        <a
-          href="https://github.com/your-github"
+        <Link
+          to={"https://github.com/ABDULLAHAHMED1575"}
           target="_blank"
           rel="noopener noreferrer"
           className="text-3xl text-gray-400 hover:text-yellow-400 transition"
         >
           <FaGithub />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/your-linkedin"
+        </Link>
+        <Link
+          to={"https://www.linkedin.com/in/abdullahmed1/"}
           target="_blank"
           rel="noopener noreferrer"
           className="text-3xl text-gray-400 hover:text-yellow-400 transition"
         >
           <FaLinkedin />
-        </a>
+        </Link>
       </div>
 
       {/* Contact Form */}
