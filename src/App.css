@@ -1,0 +1,251 @@
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 6ch;
+  }
+}
+
+@keyframes title-sm {
+  from {
+    width: 0;
+  }
+  to {
+    width: 14ch;
+  }
+}
+
+@keyframes title {
+  from {
+    width: 0;
+  }
+  to {
+    width: 18ch; 
+  }
+}
+
+@keyframes paragraph {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%; 
+  }
+}
+
+@keyframes paragraph-sm {
+  from {
+    width: 0;
+  }
+  to {
+    width: 39ch;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes neonGlow {
+  0%, 100% {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff8a22, 0 0 40px #ff8a22;
+  }
+  50% {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #bada55, 0 0 80px #bada55;
+  }
+}
+
+@keyframes textShadow {
+  0%, 100% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff8a22, 0 0 40px #ff8a22;
+  }
+  50% {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #bada55, 0 0 80px #bada55;
+  }
+}
+
+@keyframes slideInFromRight {
+  from{
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes neon-pulse {
+  0%, 100% {
+    box-shadow:
+      0 0 5px #000000,
+      0 0 10px #00ffcc,
+      0 0 20px #afbafd,
+      0 0 40px #d39384;
+  }
+  50% {
+    box-shadow:
+      0 0 10px #2a3633,
+      0 0 20px #0051ff,
+      0 0 40px #6a2d96,
+      0 0 80px #fafbfb;
+  }
+}
+
+.neon-border {
+  border: 2px solid #a8b19c;
+  border-radius: 2px;
+  animation: neon-pulse 2s infinite alternate;
+}
+
+#heading1,
+.intro,
+.para {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 5px solid white;
+  width: 0;
+  background: linear-gradient(90deg, #f5d6bb, #979c7b, #48ceae);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+#heading1,.intro-sm,.para-sm {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 5px solid white;
+  width: 0;
+  background: linear-gradient(90deg, #f5d6bb, #979c7b, #48ceae);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.icon-animation {
+  animation: scaleUp 0.5s ease-in-out forwards, bounce 1s ease-in-out 0.5s;
+  opacity: 0;
+}
+
+.icon-animation:hover {
+  transform: scale(1.2);
+  transition: transform 0.2s ease-in-out;
+  filter: drop-shadow(0 0 10px #ff8a22);
+}
+
+.profile-image {
+  animation: slideInFromRight 1s ease-in-out forwards;
+}
+
+.border-css {
+  border-radius: 100% 0% 100% 0% / 44% 100% 0% 56%;
+}
+
+/* Parallax effect */
+@keyframes twinkle {
+  0% { opacity: 0.2; }
+  50% { opacity: 0.7; }
+  100% { opacity: 0.2; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes floatFast {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+.parallax-container {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 1px;
+}
+
+.parallax-content {
+  transform-style: preserve-3d;
+}
+
+.parallax-back {
+  transform: translateZ(-1px) scale(2);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.parallax-base {
+  transform: translateZ(0);
+  position: relative;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: floatSlow 10s ease-in-out infinite;
+}
+
+.animate-float-fast {
+  animation: floatFast 4s ease-in-out infinite;
+}
+
+.section-transition {
+  transition: all 0.5s ease-out;
+}
+
+/* Custom Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #2d2d2d; /* Dark track */
+  border-radius: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #facc15; /* Yellow */
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #d4a400; /* Darker yellow */
+}
