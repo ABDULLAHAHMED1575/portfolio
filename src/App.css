@@ -249,3 +249,13 @@
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
   background: #d4a400; /* Darker yellow */
 }
+
+
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari and Opera */
+}

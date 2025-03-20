@@ -5,13 +5,13 @@ import galaxy from '../videos/galaxy.mp4';
 
 export const MainLayout = ({ children }) => {
   return (
-    <div className="bg-black text-white scroll-smooth relative min-h-screen">
+    <div className="bg-black text-white scroll-smooth relative max-w-full min-h-screen">
       <video
         loop
         autoPlay
         muted
         playsInline
-        className="absolute top-0 left-0 w-full h-full object-cover z-0"
+        className="absolute top-0 left-0 h-full object-cover z-0"
         src={galaxy}
       ></video>
       <div className="relative z-10">
