@@ -14,7 +14,17 @@ export const Experience = () => {
         "Collaborated with a team to solve real-world challenges and improve code efficiency.",
       ],
     },
-    // Add more experiences here if needed
+    {
+      title: "Full Stack Intern | Glacier Agency",
+      date: "July-2025 – Oct-2025",
+      details: [
+        "Developed custom Shopify apps using GraphQL Admin API.",
+        "Built responsive interfaces with React.js and Node.js backend.",
+        "Integrated API requests and automated e-commerce store processes.",
+        "Collaborated on deployment, testing, and performance optimization workflows.",
+        "Participated in code reviews to improve application reliability.",
+      ],
+    },
   ];
 
   return (

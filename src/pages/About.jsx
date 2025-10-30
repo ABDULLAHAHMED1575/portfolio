@@ -20,7 +20,7 @@ export const About = () => {
             <strong className="text-lg text-purple-400">✨ What I Do</strong>
             <ul className="mt-2 text-sm space-y-1">
               <li>✅ <span className="font-semibold text-yellow-400">Frontend:</span> React.js, Tailwind CSS, TypeScript</li>
-              <li>✅ <span className="font-semibold text-blue-400">Backend:</span> FastAPI, Node.js, Express.js, MongoDB</li>
+              <li>✅ <span className="font-semibold text-blue-400">Backend:</span> FastAPI, Node.js, FastAPI, Express.js, MongoDB</li>
               <li>✅ <span className="font-semibold text-red-400">Problem-Solving:</span> Debugging & optimizing performance</li>
             </ul>
           </div>

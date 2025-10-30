@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom';
 import "../App.css";
 import { useRef } from 'react';
-import compiler from "../assets/Compiler.png";
+import compiler from "../assets/smartcue.jpg";
 import Blog from "../assets/Blog.jpg";
-import logo from "../assets/logo.jpg";
-import Neuro from "../assets/Neuro.jpg";
+import logo from "../assets/ecommerce.jpg";
+import Neuro from "../assets/taskmanager.jpg";
 
 export const Projects = () => {
   const scrollContainerRef = useRef(null);
@@ -15,31 +15,31 @@ export const Projects = () => {
       image: Blog,
       title: "Blog Platform",
       desc: "A full-stack MERN blog platform with user authentication.",
-      to: "https://blog-1-2r5b.onrender.com",
+      to: "https://github.com/ABDULLAHAHMED1575/blog",
       blank: "_blank",
     },
     {
       id: 2,
       image: Neuro,
-      title: "NeuroQuest",
-      desc: "React based IQ test.",
-      to: "https://neuroquest.netlify.app/",
+      title: "Task Manager",
+      desc: "A full-stack MERN blog platform with user authentication.",
+      to: "https://github.com/ABDULLAHAHMED1575/task-manager",
       blank: "_blank",
     },
     {
       id: 3,
       image: logo,
-      title: "Restaurant",
-      desc: "Ui design.",
-      to: "https://react-application-restaurant.netlify.app/",
+      title: "Ecommerce",
+      desc: "A full-stack FastAPI project with user authentication.",
+      to: "https://github.com/ABDULLAHAHMED1575/ecommerce",
       blank: "_blank",
     },
     {
       id: 4,
       image: compiler,
-      title: "LR(1)",
-      desc: "Compiler Construction Parser based Project.",
-      to: "https://clr-parser.netlify.app/",
+      title: "Smart Cue",
+      desc: "A smart system that provides daily remainder to user",
+      to: "https://github.com/ABDULLAHAHMED1575/SmartCue",
       blank: "_blank",
     },
   ];
