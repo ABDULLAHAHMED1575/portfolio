@@ -43,9 +43,8 @@ export const Intro = () => {
   return (
     <div className='h-screen w-full flex flex-col justify-center items-center p-4'>
       <div className='flex flex-col lg:flex-row gap-8 justify-center items-center w-full max-w-6xl'>
-        {/* Text Content */}
         <div className='flex flex-col gap-6 md:gap-8 justify-center text-center md:text-left w-full lg:w-1/2 order-2 lg:order-1'>
-          <div className='space-y-4 w-full max-w-xl'>
+          <div className='space-y-4 sm:w-full md:w-full lg:w-[1100px] max-w-xl'>
             <h1 className='text-lg md:text-xl' id='heading1' ref={heading1Ref} style={{ visibility: 'hidden' }}>
               Hi, I'm
             </h1>
@@ -53,7 +52,7 @@ export const Intro = () => {
               <strong>Abdullah Ahmed 👋</strong>
             </h1>
             <p className='text-xs sm:text-base md:text-lg lg:text-xl para' ref={paraRef} style={{ visibility: 'hidden' }}>
-              Innovative Full Stack Intern | Turning Ideas into Scalable Solutions
+              Innovative Full Stack Intern | Turning Ideas into Scalable <br/> Solutions
             </p>
           </div>
           <div className='flex justify-center md:justify-start space-x-6'>
